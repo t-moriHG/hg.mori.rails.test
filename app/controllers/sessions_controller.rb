@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     logger.debug("SessionsController.create called!")
     if @user.authenticate(session_params[:password])
       sign_in(@user)
-      redirect_to account_path
+      redirect_to main_path
     else
       flash.now[:danger] = t('.flash.invalid_password')
       render 'new'
