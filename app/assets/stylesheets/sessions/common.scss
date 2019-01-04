@@ -2,7 +2,64 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.field {
-  width: 960px;
-  margin: 1%;
+.inner{
+    background-color: #ffffff;
+    width: 430px;
+    height: 260px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: 200px auto;
+}
+
+.input_block{
+  margin: 40px 40px;
+}
+
+.login_label{
+  width: 100px;
+  font-weight: bold;
+  text-align: right;
+  display: inline-block;
+}
+
+.login_text{
+  width: 200px;
+  font-weight: bold;
+  margin: 0px 10px;
+}
+
+.button_block{
+  width: 350px;
+  margin: 0px auto;
+}
+.login_button{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(#87ceeb 0%, #00bfff 100%);
+    background-image: linear-gradient(#87ceeb 0%, #00bfff 100%);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+}
+
+.login_btn:active{/*押したとき*/
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);/*沈むように*/
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    background-image: -webkit-linear-gradient(#87ceeb 0%, #1e90ff 100%);
+    background-image: linear-gradient(#87ceeb 0%, #1e90ff 100%);/*グラデーションを明るく*/
 }

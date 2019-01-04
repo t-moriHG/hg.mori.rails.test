@@ -1,19 +1,17 @@
 <%= stylesheet_link_tag "sessions/common", :media => "all" %>
 
-<br><br>
-<%= form_for :session, url: login_path do |f| %>
-
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <%= f.text_field :password %>
-  </div>
-  
-  <div class="actions">
-  	<%= submit_tag "ログイン" %>
-  </div>
-<% end %>
+<div class="inner">
+	<%= form_for :session, url: login_path do |f| %>
+	<div class="input_block">
+		<%= f.label "ログイン：", { :class => "login_label" } %>
+  		<%= f.text_field :name, { :class => "login_text" } %>
+  	</div>
+  	<div class="input_block">
+  		<%= f.label "パスワード：", { :class => "login_label" } %>
+  		<%= f.text_field :password, { :class => "login_text" } %>
+  	</div>
+  	<div class="button_block">
+  		<%= submit_tag "ログイン", { :class => "login_button" } %>
+  	</div>
+  <% end %>
+</div>
