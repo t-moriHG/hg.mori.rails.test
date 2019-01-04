@@ -1,8 +1,11 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
 
 .inner{
     background-color: #ffffff;
     width: 530px;
-    height: 260px;
+    height: 330px;
     top: 0;
     bottom: 0;
     left: 0;
@@ -33,7 +36,7 @@
   margin: 0px auto;
 }
 
-.login_button{
+.regist_button{
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -53,7 +56,7 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
 }
 
-.login_button:active{/*押したとき*/
+.regist_button:active{/*押したとき*/
     -ms-transform: translateY(2px);
     -webkit-transform: translateY(2px);
     transform: translateY(2px);/*沈むように*/
