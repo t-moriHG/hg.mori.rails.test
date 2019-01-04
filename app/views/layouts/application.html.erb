@@ -7,9 +7,15 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "common", :media => "all" %>
   </head>
 
   <body>
+  	<header class="header">
+  		<hgroup>
+  			<h>Login Sample</h>
+  		</hgroup>
+  	</header>
     <%= yield %>
   </body>
 </html>
